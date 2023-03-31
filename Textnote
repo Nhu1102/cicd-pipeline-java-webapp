@@ -1,0 +1,6 @@
+Mình có chút góp ý thêm là
+Terraform bạn nên có bước plan trước khi apply với auto-approve để kiểm tra các resources được tạo ra trước, rồi apply file plan vào.
+Ansible:
+- Mình nghĩ việc sử dụng template j2 thay cho các file config tĩnh viết trong file deployment
+- Dùng các module tạo user , encrypt password với sensitive data với ansible-vault
+- Update config qua templates với files để giảm việc manual remote server thì pipelines của bạn sẽ càng tự động hoá nhiều hơn và linh động hơn đó
